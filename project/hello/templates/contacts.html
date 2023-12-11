@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacts</title>
+</head>
+<body>
+    <p2>{{telefon}}</p2>
+    <p>{{social}}</p>
+    <ul>
+        {% for contact in contacts %}
+            <li>{{ contact.full_name }} - {{ contact.email }} - {{ contact.gender }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
